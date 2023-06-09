@@ -5,10 +5,15 @@ import Servant
 
 import API
 import Server
+import Database
 
 app :: Application
 app = serve (Proxy :: Proxy API) server
 
 main :: IO ()
-main = run 8080 app
+main = do
+    Database.test
+    run 8080 app
+
+
 
