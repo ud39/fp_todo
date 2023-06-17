@@ -12,7 +12,7 @@ app = serve (Proxy :: Proxy API) server
 
 main :: IO ()
 main = do
-    Database.test
+    Database.connectToDatabase
     run 8080 app
 
 
