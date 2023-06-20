@@ -78,6 +78,8 @@ executable backend
                     , persistent-postgresql
                     , monad-logger
                     , dotenv
+                    , aeson
+ 
 
 
     -- Directories containing source files.
